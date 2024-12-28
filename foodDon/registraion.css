@@ -1,0 +1,173 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: orange;
+}
+
+
+.form-container{
+    /* height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width:700px; */
+    /* background:linear-gradient(rgba(0, 0, 0, 0.871), rgba(0, 0, 0, 0.679) ,rgba(0, 0, 0, 0.707))
+    ,url("https://i.pinimg.com/564x/35/0a/46/350a4653b32f0b80553152829027ec68.jpg"); 
+    background-color: rgb(254, 255, 255);
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding:40px;
+    border-radius:5px;
+    box-shadow: 0px 1px 10000px 2px rgb(111, 255, 0);
+    border-top-left-radius:32%;
+    transition:border-top-left-radius 2s ease;
+    */
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    background-color: rgb(246, 237, 237);
+    padding:20px  30px;
+    box-shadow:0px -2px 30px 0px rgb(224, 2, 2);
+    border-radius:25%  0px 0px 0px;
+    transition: border-radius  1s ease-in-out;
+}
+.form-title{
+    text-align: center;
+    text-shadow: 0px 1px 1px rgb(0, 0, 0),
+    0px -1px 1px rgb(2, 0, 0),1px 0px 1px rgb(1, 38, 251),
+    -1px 0px 1px rgb(0, 4, 255);
+    color:rgb(0, 0, 0);
+}
+.input-group{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap:wrap;
+    width:100%;
+    max-width: 700px;
+}
+.input-box{
+    width: 50%;
+    max-width:700px;
+   padding-bottom:20px;
+}
+.input-box>input {
+    width:85%;
+    height: 40px;
+    border-radius: 8px;
+    padding:0px 5px;
+    outline:none;
+    background-color: rgba(255, 255, 255, 0);
+    border:1px solid aliceblue;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+    color:#000000;
+
+}
+.gender-box{
+    width:50%;
+    display: flex;
+    justify-content: flext-start;
+    align-items: center;
+    margin:20px 0px ;
+    
+}
+.gender-box>label{
+    color:rgb(0, 0, 0);
+    padding:0px 10px;
+    font-size:2vmin
+}
+.gender-box>.male,.female,.others[type =radio]{
+    transform:scale(1.5);
+
+}
+small{
+    color:red;
+    display: none;
+    margin-top:10px;
+    font-weight: 900;
+}
+.button-box{
+    width:100%;
+    margin:30px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width:40vw;
+    padding:10px 0px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    outline:none;
+    border:none;
+    box-shadow: 0px 0px 8px 0px rgb(2, 44, 213);
+    transform:scale(1);
+    background-color:rgb(0, 0, 223);
+    color:white;
+}
+.button:active{
+    transform:scale(1.1);
+   
+}
+.acc_exist{
+    font-size:3vmin;
+}
+.password:invalid,.mobilenumber:invalid,.status:invalid,.adhar:invalid{
+    border:2px solid red;
+    box-shadow:0px 0px 0px white;
+}
+
+@media screen and (width<500px){
+    *{
+        flex-wrap: wrap;
+    }
+    .box{
+        border-radius: 0px
+    }
+    .input-group{
+        flex-wrap:wrap;
+    }
+    .input-box{
+        width:100%;
+        margin:0;
+    }
+    .input-box>input{
+        height:40px;
+    }
+    .gender-box{
+        width:100%;
+        margin:0;
+        text-align: left;
+    }
+    .gender-box>label{
+        color:rgb(0, 0, 0);
+        padding:0px 10px;
+        font-size:3vmin
+    }
+    .gender-box>.male,.female,.others[type =radio]{
+        transform:scale(1);
+    
+    }
+    .button-box{
+        margin:0;
+        display:flex;
+        justify-content: flex-start;
+    }
+    .button{
+        margin-top:10px;
+        background-color: rgb(200, 248, 5);;
+        width:70vw;
+    }
+    
+
+
+}
+

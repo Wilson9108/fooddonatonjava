@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registraion.css">
+</head>
+<body>
+    <div class="form-container" >
+        <div class="box">       
+        <form id="form" action="s.html">
+            <h1 class="form-title">NGO Registration</h1>
+            <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="username" class="username" name="username" >
+                <small class="usernameError"></small>
+            </div >
+            <div class="input-box">
+                <input type="text" placeholder="mobilenumber" class="mobilenumber" name="mobilenumber" pattern="[0-9]{10}">
+                <small class="mobilenumberError"></small>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="password" class="password" name="password" pattern="[a-zA-Z]{1}[0-9]{4,}">
+                <small class="passwordError"></small>
+            </div>
+            <div class="input-box">
+                <input type="text " placeholder="confirmPassword" class="conpassword" name="confirmPassword">
+                <small class="conError"></small>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="email" class="email" name="email" >
+                <small class="emailError"></small>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="adhar" class="adhar" name="adhar" pattern="[0-9]{5}">
+                <small class="adharError"></small>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="area" class="area" name="area">
+                <small class="areaError"></small>
+            </div>
+            <div  class="input-box">
+                <input type="text" placeholder="city" class="city" name="city">
+                <small class="cityError"></small>
+            </div>
+            <div class="input-box">
+                <input type="date" placeholder="Date Of Birth" class="dob" name="dob">
+                <small class="dobError"></small>
+            </div>
+            <!-- <div class="input-box">
+                <input type="text" placeholder="status" class="status" name="status" pattern="[0-1]{1}">
+                <small class="statusError"></small>
+            </div> -->
+            <div class="gender-box">
+                <input type="radio" class="male  " name="gender" value="male"  >
+                <label for="male" class="gender">Male</label>
+                <input type="radio" class="female " name="gender" value="female" >
+                <label for="female" class="gender">Female</label>
+                <input type="radio" class="others " name="gender" value="others">
+                <label for="others" class="gender">Others</label>
+                <!-- <select>
+                    <option>select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select> -->
+            </div>
+            <small class="genderError"></small>
+         <div class="button-box">
+            <input type="submit" value="submit" class="button">
+         </div>
+         <div class="acc-exist">
+            <p>Already have an account ?<a href="signin">Sign in</a></p>
+         </div>
+        </div>
+        </form>
+    </div>
+
+    </div>    
+
+    <script src="ngoregistration.js"></script>
+</body>
+</html>
+
